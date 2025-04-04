@@ -136,3 +136,106 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margem do primeiro item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Seção Features */
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #a0a0ff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+/* Ajusta o espaçamento lateral para telas menores */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin: 10px 0; /* Ajuste para alinhamento vertical */
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
